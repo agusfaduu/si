@@ -2,22 +2,27 @@
 <html>
 <head>
   <meta charset="UTF-8">
-
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="margin:0; background:#111; overflow:hidden;">
+<body>
+
+<img class="titulo-logo" src="img/logo.png">
+
+<img class="menu-btn" id="btn1" src="img/btn1.png">
+<img class="menu-btn" id="btn2" src="img/btn2.png">
+<img class="menu-btn" id="btn3" src="img/btn3.png">
 
 <model-viewer
+  id="modelo"
+  class="modelo"
   src="modelo.glb"
-  auto-rotate
   camera-controls
-  exposure="2"
-  environment-image="https://modelviewer.dev/shared-assets/environments/neutral.hdr"
-  shadow-intensity="1"
-  tone-mapping="aces"
-  style="width:100vw; height:100vh; background:#111;">
+  disable-zoom>
 </model-viewer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
