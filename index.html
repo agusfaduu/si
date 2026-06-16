@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LOGO -->
+  <img class="titulo-logo" src="img/logo.png" alt="logo">
+
+  <!-- BOTONES -->
+  <img class="menu-btn" id="btn1" src="img/btn1.png" alt="boton 1">
+  <img class="menu-btn" id="btn2" src="img/btn2.png" alt="boton 2">
+  <img class="menu-btn" id="btn3" src="img/btn3.png" alt="boton 3">
+
+  <!-- MODELO 3D -->
+  <model-viewer
+    id="modelo"
+    class="modelo"
+    src="modelo.glb"
+    camera-controls
+    disable-zoom>
+  </model-viewer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
