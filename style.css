@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  background: #111;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ===================== */
+/* ESCENA BASE */
+/* ===================== */
+.scene {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%) scale(var(--scale));
+  transform-origin: center;
+}
+
+/* ===================== */
+/* LOGO */
+/* ===================== */
+.titulo-logo {
+  position: absolute;
+  width: 500px;
+
+  left: 50px;
+  top: 50px;
+
+  z-index: 10;
+}
+
+/* ===================== */
+/* BOTONES */
+/* ===================== */
+#btn1, #btn2, #btn3 {
+  position: absolute;
+  width: 110px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* POSICIONES EXACTAS (LAS TUYAS) */
+#btn1 {
+  left: 890px;
+  top: 700px;
+}
+
+#btn2 {
+  left: 1650px;
+  top: 400px;
+}
+
+#btn3 {
+  left: 200px;
+  top: 400px;
+}
+
+/* ===================== */
+/* MODELO 3D */
+/* ===================== */
+.modelo {
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  left: 50%;
+  top: 40%;
+
+  transform: translate(-50%, -50%);
+}
