@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  background: #111;
+  overflow: hidden;
+}
+
+.foto {
+  position: absolute;
+  cursor: grab;
+  user-select: none;
+  z-index: 1;
+
+  /* escala correcta SIN romper layout */
+  transform: scale(0.25);
+  transform-origin: top left;
+}
+
+.foto:active {
+  cursor: grabbing;
+}
+
+.texto {
+  position: absolute;
+  color: #8c8b8b;
+  font-family: Roboto, sans-serif;
+  font-size: 38px;
+  user-select: none;
+  pointer-events: none;
+  z-index: 0;
+}
