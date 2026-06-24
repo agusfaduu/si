@@ -4,7 +4,7 @@ body {
   overflow: hidden;
 }
 
-/* ESCENA FIJA */
+/* ESCENA FIJA (BASE 1920x1080) */
 .scene {
   position: absolute;
   width: 1920px;
@@ -37,14 +37,15 @@ body {
 #btn2 { left: 1650px; top: 400px; }
 #btn3 { left: 20px; top: 400px; }
 
-/* MODELO (CLAVE DEL EFECTO) */
+/* MODELO (CLAVE DEL FIX DE CENTRADO) */
 .modelo {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
 
-  top: 0;
-  left: 0;
+  width: 1920px;
+  height: 1080px;
 
-  background: transparent;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
 }
