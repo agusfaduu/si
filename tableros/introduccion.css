@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  background: #000;
+  overflow: hidden;
+}
+
+/* CENTRADO Y ESCALADO */
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LIENZO BASE */
+.canvas {
+  position: relative;
+
+  width: 1365px;
+  height: 892px;
+
+  transform-origin: center;
+  transform: scale(var(--scale));
+}
+
+/* LOGO */
+.logo {
+  position: absolute;
+
+  width: 700px;
+
+  left: 50%;
+  top: 60px;
+
+  transform: translateX(-50%);
+}
+
+/* IMAGEN 1 → MÁS A LA IZQUIERDA */
+.img1 {
+  position: absolute;
+
+  width: 500px;
+
+  left: -120px;   /* antes: right: 0 */
+  top: 0;
+}
+
+/* IMAGEN 2 → MÁS A LA DERECHA */
+.img2 {
+  position: absolute;
+
+  width: 500px;
+
+  right: -120px;  /* empuja hacia afuera a la derecha */
+  top: 600px;
+}
+
+/* TEXTO */
+.texto {
+  position: absolute;
+
+  width: 700px;
+
+  left: 50%;
+  top: 60%;
+
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-family: "Fira Code", monospace;
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+}
